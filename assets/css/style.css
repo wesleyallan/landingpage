@@ -88,6 +88,11 @@ img {
   flex: 1 1 160px;
   margin: 0 10px;
 }
+@media (max-width: 360px) {
+  .sobre-img {
+    display:none;
+  }
+}
 
 /* Preco */
 
@@ -237,13 +242,14 @@ img {
   margin-bottom: .5em;
 }
 .comentario-all {
-  width: 100%;
+  max-width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .comentario-all .comentario-widget {
   margin-left: 20px;
-  flex: 1 1 33%;
+  flex: 1;
 }
 .comentario-all .comentario-widget:first-child {
   margin-right: 20px;
