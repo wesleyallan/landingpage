@@ -409,3 +409,8 @@ img {
   border-left: 10px solid #2c70ff;
   transform: translateX(calc(100% - 70px));
 }
+@media (max-width:540px) {
+  #icons {
+    display:none;
+  }
+}
